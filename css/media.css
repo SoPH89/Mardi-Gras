@@ -1,0 +1,83 @@
+@import url(navbar.css);
+@import url(footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FDF8E5;
+}
+
+.media-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9453a6;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8b27a7;
+}
+
+h1 {
+    font-family: 'Henny Penny', cursive;
+    text-align: center;
+}
+
+.media-container {
+    width: 80%;
+    column-count: 4;
+    margin: 0 auto;
+
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    margin: 1em;
+
+
+}
+
+.video-media {
+    position: relative;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        column-count: 3;
+    }
+
+    .video-media {
+        width: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        column-count: 2;
+    }
+}

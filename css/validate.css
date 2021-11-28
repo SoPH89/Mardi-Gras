@@ -1,0 +1,130 @@
+@import url(navbar.css);
+@import url(footer.css);
+/* font-family: 'Open Sans Condensed',sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FDF8E5;
+    font-family: 'Roboto';
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9453a6;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8b27a7;
+}
+
+.form-container {
+    background-color: #9453A6;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: white;
+
+
+}
+
+form {
+    padding: 30px 40px;
+}
+
+.formControl input {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    margin-top: 5px;
+
+
+}
+
+.formControl input:focus {
+    outline: 0;
+    border-color: #666;
+
+}
+
+.form-submit {
+    background-color: #8CBF3F;
+    border: 2px solid #8CBF3F;
+    border-radius: 4px;
+    color: beige;
+    display: block;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.form-submit:hover {
+    background-color: #45611b;
+}
+
+.formControl.succsess input {
+    border-color: var(--success);
+}
+
+.formControl.error input {
+    border-color: var(--error);
+    color: red;
+}
+
+.formControl small {
+    color: white;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.formControl.error small {
+    visibility: visible;
+}
+
+@media only screen and (min-width: 768px) {
+    .form-container {
+        height: 600px;
+        width: 800px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .form-container {
+        margin: 0 auto;
+        height: 500px;
+        width: 500px;
+    }
+}

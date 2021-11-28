@@ -1,0 +1,147 @@
+@import url(navbar.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about-body {
+    text-align: justify;
+    background-color: #FDF8E5;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9453a6;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8b27a7;
+}
+
+.about-content {
+    width: 100%;
+
+}
+
+.about-h1 {
+    font-family: 'Henny Penny',
+        cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-p {
+    padding: 30px 30px 20px;
+    font-family: 'roboto';
+    text-align: justify;
+    font-size: 20px;
+
+}
+
+.about-h2 {
+    font-family: 'roboto';
+    text-align: center;
+}
+
+.img-item {
+    /* position: relative;
+    float: right;
+    margin-top: 800px;
+    margin-right: 80px; */
+    width: 100%;
+    height: 100%;
+}
+
+.img-item2 {
+    width: 100%;
+}
+
+.img-item3 {
+    /* position: relative;
+    float: right;
+    margin-top: 200px;
+    margin-right: -120px; */
+    width: 100%;
+}
+
+ @media only screen and (min-width:768px) {
+    .about-h1 {
+        font-family: 'Henny Penny',
+            cursive;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        width: 600px;
+        margin: 0 auto;
+
+
+    }
+
+    .about-p {
+        padding: 30px 30px 20px;
+        font-family: 'roboto';
+        text-align: justify;
+        font-size: 28px;
+
+    }
+
+    .about-h2 {
+        font-size: 34px;
+    }
+} 
+
+@media only screen and (min-width:1000px) {
+    .about-content {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .about-h1 {
+        font-size: 50px;
+    }
+
+    .img-item {
+        width: 100%;
+        height: 500px;
+    }
+
+    .about-p {
+        font-size: 18px;
+
+    }
+
+    .img-item2 {
+        width: 350px;
+        height: 250px;
+        float: left;
+        padding: 10px 10px;
+    }
+
+    .img-item3 {
+
+        width: 250px;
+        height: 120px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        /* float: left; */
+        /* padding: 20px 10px; */
+    }
+
+} 

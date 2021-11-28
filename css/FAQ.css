@@ -1,0 +1,128 @@
+@import url(navbar.css);
+@import url(footer.css);
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+
+    font-family: 'Henny Penny',
+        cursive;
+    background-color: #FDF8E5;
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9453a6;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #8b27a7;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Henny Penny',
+        cursive;
+}
+
+.accordion {
+    max-width: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "Quicksand", sans-serif;
+    background: #9453A6;
+
+
+}
+
+.accordion__label,
+.accordion__content {
+    padding: 14px 20px;
+    font-family: 'Roboto',
+        sans-serif;
+    ;
+}
+
+.accordion__label {
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+
+.accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+
+.accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__input:checked~.accordion__content {
+    display: block;
+}
+
+.accordion__input:checked~.accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+}
+
+@media only screen and (min-width: 768px) {
+    .accordion {
+        max-width: 700px;
+        position: relative;
+        margin: auto;
+    }
+
+    .accordion__label,
+    .accordion__content {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .accordion__label,
+    .accordion__content {
+        font-size: 16px;
+    }
+}
